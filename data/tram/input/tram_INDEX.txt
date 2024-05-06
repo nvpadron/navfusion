@@ -1,0 +1,17 @@
+Index of Elements: 
+INDEX:	0	-	time
+INDEX:	1	-	ax
+INDEX:	2	-	ay
+INDEX:	3	-	az
+INDEX:	4	-	wx
+INDEX:	5	-	wy
+INDEX:	6	-	wz
+INDEX:	7	-	Bx
+INDEX:	8	-	By
+INDEX:	9	-	Bz
+INDEX:	10	-	Azimuth
+INDEX:	11	-	Pitch
+INDEX:	12	-	Roll
+INDEX:	13	-	Latitude
+INDEX:	14	-	Longitude
+INDEX:	15	-	Speed (m/s)
