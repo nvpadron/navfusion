@@ -23,7 +23,7 @@ Helper functions for result analysis and running in Python (/tools).
 
 ### Clone repository
 ```bash
-git clone git@github.com:nvpadron/navfusion.git
+git clone https://github.com/nvpadron/navfusion.git
 ```
 
 ### Installing Armadillo
