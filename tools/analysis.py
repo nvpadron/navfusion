@@ -2,12 +2,12 @@
 from helpers import *
     
 # Read Input
-filename = r'D:\Nico\Lab\Software\development\Navigation\navfusion\data\tram\input\tram.csv'
+filename = 'data/tram/input/tram.csv'
 csvHandler = HandlerCSV(',','.',filename)
 dfIn = csvHandler.read()
 
 # Read Output
-filename = r'D:\Nico\Lab\Software\development\Navigation\navfusion\data\tram\yaw\output.csv'
+filename = 'data/tram/yaw/output.csv'
 csvHandler = HandlerCSV(',','.',filename)
 dfOut = csvHandler.read()
 

@@ -59,7 +59,7 @@ kfconfig['GPS_DOP'] = [3,3,3]
 # END OF USER INPUTS
 
 cmdstr = formCmdStr(cmds,kfconfig)
-#os.system(".\\build\\src\\Release\\navfusion.exe" + cmdstr)
-os.system(".\\out\\navfusion.exe" + cmdstr)
+os.system(".\\build\\src\\Release\\navfusion.exe" + cmdstr)
+#os.system(".\\out\\navfusion.exe" + cmdstr)
 
 print('End of file')

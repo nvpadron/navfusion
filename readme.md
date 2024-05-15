@@ -96,6 +96,9 @@ Feel free to edit with a text editor, explore and run it. It will genreate the c
 ```bash
 python .\tools\run.py
 ```
+
+Note that the program expects a CSV file with decimals represented with dots: "0.1,0.5,…"
+
 This file will run the default build: /out/navfusion.exe, if you make a new build, this will be stored in /build/src/Release/navfusion.exe. You can modify the last line inside /tools/run.py to run the new build if desired.
 NOTE: the DLL file libopenblas.dll must be at the same location as the .exe for the program to work. This DLL file comes with Armadillo, but the default is provided in /libs.
 

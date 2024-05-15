@@ -50,7 +50,7 @@ void KalmanFilter::initialize(void)
 		// The field is "0.004", the substr(6, 5), so count is 10 - 6 + 1;
 		field = valuesDataStdString.substr(prevPos, readUntilPos - prevPos + 1);
 		//sData.Q(i + KF_MEASUREMENTS_VECTOR_LENGTH, i + KF_MEASUREMENTS_VECTOR_LENGTH) = atof(field.c_str());
-		sData.u(i) =  atof(field.c_str());
+		sData.v(i) =  atof(field.c_str());
 	}
 
 	// Read R matrix diagonal
@@ -72,9 +72,9 @@ void KalmanFilter::initialize(void)
 
 	sData.S = 0.1 * arma::eye(KF_STATE_VECTOR_LENGTH,KF_STATE_VECTOR_LENGTH);
 
-	sData.u.subvec(6,8) %= cInterfaceNavdata.getInputValues().attitudeSelector;
-	sData.u.subvec(9,11) %= cInterfaceNavdata.getInputValues().bodySelector;
-	sData.u.subvec(12,14) %= cInterfaceNavdata.getInputValues().attitudeSelector;
+	sData.v.subvec(6,8) %= cInterfaceNavdata.getInputValues().attitudeSelector;
+	sData.v.subvec(9,11) %= cInterfaceNavdata.getInputValues().bodySelector;
+	sData.v.subvec(12,14) %= cInterfaceNavdata.getInputValues().attitudeSelector;
 }
 
 /* Process Kalman Filter */
@@ -182,7 +182,7 @@ void KalmanFilter::stateTransitionMatrix(const Datatype_s& sDataIns)
 	sData.G(arma::span(3,5),arma::span(3,5)) = R.t() * Rb2n;
 	sData.G(arma::span(6,8),arma::span(6,8)) = M;
 
-	sData.Q = arma::diagmat(arma::pow(sData.u,2));//arma::diagmat(arma::pow(u,2));
+	sData.Q = arma::diagmat(arma::pow(sData.v,2));
 
 	sData.R = arma::diagmat(sData.w);
 }

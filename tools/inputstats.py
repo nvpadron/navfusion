@@ -1,7 +1,7 @@
 from helpers import *
     
 # Read Input
-filename = r'D:\Nico\Lab\Software\development\Navigation\navfusion\data\inputs\rest.csv'
+filename = 'data/phone_in_rest/rest.csv'
 
 csvHandler = HandlerCSV(',','.', filename)
 dfIn = csvHandler.read()

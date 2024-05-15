@@ -31,7 +31,7 @@ typedef struct DatatypesKF_t {
 	arma::vec		  X = arma::zeros(KF_STATE_VECTOR_LENGTH, 1);
 	arma::vec         Y = arma::zeros(KF_MEASUREMENTS_VECTOR_LENGTH, 1);
 	arma::vec         I = arma::zeros(KF_MEASUREMENTS_VECTOR_LENGTH, 1);
-	arma::vec		  u = arma::zeros(KF_STATE_VECTOR_LENGTH,1);
+	arma::vec		  v = arma::zeros(KF_STATE_VECTOR_LENGTH,1);
 	arma::vec		  w = arma::zeros(KF_MEASUREMENTS_VECTOR_LENGTH,1);
 } DatatypesKF_t;
 
