@@ -2,6 +2,8 @@
 
 Sensor fusion of GNSS and Inertial Sensors.
 
+See detailed theory, description and usage in [NAVFUSION](https://spacewayfinder.com/software/navfusion/) & [Documentation](https://www.spacewayfinder.com/docs/navfusion/index.html)
+
 Nicolás Padrón - https://www.spacewayfinder.com/
 
 This project is programmed in C++ (/src), linear algebra operations carried out with Armadillo library.
